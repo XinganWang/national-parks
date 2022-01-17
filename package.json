@@ -2,7 +2,7 @@
   "name": "national-parks",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://xinganwang.github.io",
+  "homepage": "https://xinganwang.github.io/national-parks",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
