@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.09f2a17e.css",
-    "main.js": "/static/js/main.63a0bf04.js",
-    "index.html": "/index.html",
-    "main.09f2a17e.css.map": "/static/css/main.09f2a17e.css.map",
-    "main.63a0bf04.js.map": "/static/js/main.63a0bf04.js.map"
+    "main.css": "/national-parks/static/css/main.09f2a17e.css",
+    "main.js": "/national-parks/static/js/main.63a0bf04.js",
+    "index.html": "/national-parks/index.html",
+    "main.09f2a17e.css.map": "/national-parks/static/css/main.09f2a17e.css.map",
+    "main.63a0bf04.js.map": "/national-parks/static/js/main.63a0bf04.js.map"
   },
   "entrypoints": [
     "static/css/main.09f2a17e.css",
