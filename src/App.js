@@ -1,23 +1,36 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Provinces from './components/Provinces/Provinces'
+import Park from './components/Park/Park'
+import items from './data'
 
 function App() {
+
+  const [parks, setParks] = useState(items)
+
+  const allProvinces = ['All', ...new Set(items.map((items) => items.province))];
+  const [provinces, setProvinces] = useState(allProvinces)
+
+  const filter = (province) =>{
+    if(province === 'All'){
+      setParks(items)
+    }
+    else{
+      const filterParks = items.filter (item => item.province === province)
+      setParks(filterParks)
+    }
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <section className='park section'>
+        <div className="title">
+          <h1>National Parks Canada</h1>
+          <div className="underline"></div>
+        </div>
+        <Provinces provinces = {provinces} filter={filter}/>
+        <Park parks={parks}/>
+      </section>
     </div>
   );
 }

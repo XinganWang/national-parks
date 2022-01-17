@@ -1,0 +1,27 @@
+.province-container {
+    margin-bottom: 3rem;
+    justify-content: center;
+  }
+.filter-btn {
+    font-size: 1rem;
+    margin: 0 0.5rem;
+    letter-spacing: 1px;
+    padding: 0.375rem 0.75rem;
+    color: #063352;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    border-radius: 0.25rem;
+    background: transparent;
+    border-color: transparent;
+  }
+  .filter-btn:hover {
+    background: #6a7983;
+    color: #fff;
+  }
+  .filter-btn:focus {
+    background: #6a7983;
+    color: #fff;
+  }
+
+
+  
